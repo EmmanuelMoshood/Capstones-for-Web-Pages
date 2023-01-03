@@ -1,0 +1,74 @@
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.449), rgba(0, 0, 0, 0.553)), url(./images/login-bg.jpg);
+    height: 100vh;
+}
+
+
+/* bootstrap+  */
+.text-grey{
+    color: rgba(188, 188, 188, 0.527);
+}
+.small-text{
+    font-size: 13px;
+}
+.anchor-link-bold{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+}
+
+
+/* logo  */
+.login-top{
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+.login-top img{
+    width: 150px;
+}
+
+
+/*  signup box  */
+.login-section{
+    width: 100vw; 
+}
+.login-box{
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 430px;
+    min-height: 660px;
+    border-radius: 4px;
+    padding: 60px 68px 40px;
+}
+.form-control {
+    box-shadow: none  !important;
+}
+.btn-signin{
+    width: 100%;
+    background-color: #e50914;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 24px 0 12px; 
+    padding: 5px 0px;
+}
+
+.rememberme-and-help a{
+    text-decoration: none;
+}
+.recaptcha-terms-of-use-link-button {
+    background-color: transparent;
+    border: none;
+    color: #0071eb;
+    cursor: pointer;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+}
