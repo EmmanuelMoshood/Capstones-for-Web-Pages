@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q & A</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- extra fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+      <section class="questions">
+        <!-- title -->
+        <div class="title">
+          <h2>my flash cards</h2>
+        </div>
+        <!-- questions -->
+        <div class="section-center">
+          <!-- single question -->
+          <article class="question">
+            <!-- question title -->
+            <div class="question-title">
+              <p>how do you automately take snapshots in aws?</p>
+              <button type="button" class="question-btn">
+                <span class="plus-icon">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </button>
+            </div>
+            <!-- question text -->
+            <div class="question-text">
+              <p>
+                You can use Amazon Data Lifecycle Manager to automate the creation, retention, and deletion of EBS snapshots and EBS-backed AMIs. When you automate snapshot and AMI management, it helps you to:
+
+              <br><hr>  Protect valuable data by enforcing a regular backup schedule.
+
+              <br><hr>  Create standardized AMIs that can be refreshed at regular intervals.
+
+              <br><hr>  Retain backups as required by auditors or internal compliance.
+
+              <br><hr>  Reduce storage costs by deleting outdated backups.
+
+              <br><hr>  Create disaster recovery backup policies that back up data to isolated accounts.
+              </p>
+            </div>
+          </article>
+          <!-- end of single question -->
+          <!-- single question -->
+          <article class="question">
+            <!-- question title -->
+            <div class="question-title">
+              <p>how is instance store different from Elastic Block Store?</p>
+              <button type="button" class="question-btn">
+                <span class="plus-icon">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </button>
+            </div>
+            <!-- question text -->
+            <div class="question-text">
+              <p>
+                Instance store volume is physically attached to EC2, unlike the EBS (Elastic Block Store) it is not attached via a network within the AZ.
+              </p>
+            </div>
+          </article>
+          <!-- end of single question -->
+          <!-- single question -->
+          <article class="question">
+            <!-- question title -->
+            <div class="question-title">
+              <p>what does it mean for instance stores to be ephemeral?</p>
+              <!-- button -->
+              <button type="button" class="question-btn">
+                <span class="plus-icon">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </button>
+            </div>
+            <!-- question text -->
+            <div class="question-text">
+              <p>
+                this means that data is lost when the instance is shot down 
+              </p>
+            </div>
+          </article>
+          <!-- end of single question -->
+      </section>
+    </main>
+    <!-- javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
