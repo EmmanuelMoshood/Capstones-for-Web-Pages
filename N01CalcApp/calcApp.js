@@ -8,10 +8,12 @@ let calculate = (number)=>{
 let result= ()=>{
     //make provision for error 
     try{
-        display.value=eval(display.value)
+        display.value=eval(display.value);
     }catch(err){
         display.value = "Error";
     }
+
+    showHistory()
 }
 //clear display
 function clr(){
@@ -21,9 +23,17 @@ function clr(){
 //del to delete last char
 function del(){
     display.value= display.value.slice(0,-1);
+    showHistory()
 }
 
 
 //get the element I am using to display history
-let historyDisplay = document.getElementById("#displayHistory")
+let historyElement = document.getElementById("displayHistory")
+
 //create a array where i will store calculation as history
+let historyArr = [];
+
+function showHistory(){
+    historyArr.push(display.value);
+    historyElement.innerHTML = historyArr.join("<br>");
+}
