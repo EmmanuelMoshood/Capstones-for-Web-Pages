@@ -35,9 +35,14 @@ button{
     /* box-shadow: inset 6px 6px 13px #fff, 6px 6px 13px rgb(185, 185, 185); */
 }
 #displayHistory{
+    border: solid 1px #000000;
     grid-column: span 4;
     height: 98px;
+  overflow-y:scroll;
     text-align: end;
     padding-right: 5px;
     font-size: 14px;
+}
+.historyBtn {
+      grid-column: span 4;
 }
