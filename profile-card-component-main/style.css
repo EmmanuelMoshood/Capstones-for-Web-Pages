@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+    /* Colors*/
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --greyish-blue: hsl(227, 10%, 46%);
+    --greyish-blue-light: hsl(227, 10%, 46%, 0.2);
+}
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 1px);  /* on mibile view port height are not well supported, substract a value in px will return the unit of the height value in pixel*/
+    background-color: hsl(185, 75%, 39%);
+    /* max-width: 1440px; */
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+}
+.bg{
+    /* width: 375px; */
+    /* height: 75px; */
+}
+.bg-top {
+    position: absolute; 
+    top: -50%;
+    left: -25%;
+    z-index: -1;
+}
+.bg-bottom {
+    position: absolute; 
+    bottom: -50%;
+    right: -25%;
+    z-index: -1;
+    /* display: none; */
+}
+.container{
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0.625rem;
+}
+.container article:first-child{
+    position: relative;
+}
+.container article:first-child img{
+    border-radius: 0.625rem 0.625rem 0 0;    
+}
+.container article:first-child div img{
+    border-radius: 50%;
+    width: 8.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -3.5rem;
+    border: #fff solid 5px;
+}
+.container article:nth-child(2){
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.container article:nth-child(2) h1{
+    color:var(--desaturated-blue);
+}
+.container article:nth-child(2) span{
+    color:var(--desaturated-blue);
+    font-weight: 400;
+}
+.container article:nth-child(2) p{
+    margin-top: 1rem;
+    color:var(--desaturated-blue);
+    font-weight: 400;
+}
+.container article:nth-child(3){
+    border-top: 0.5px solid var(--greyish-blue-light);
+    padding: 2.6rem;
+}
+.container article:nth-child(3) ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between; 
+}
+.container article:nth-child(3) ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container article:nth-child(3) ul li h2{
+    color: var(--desaturated-blue);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.container article:nth-child(3) ul li span{
+    color: var(--greyish-blue);
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+}
