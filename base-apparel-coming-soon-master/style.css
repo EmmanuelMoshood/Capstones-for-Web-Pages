@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Josefin+Sans:wght@300;400;600&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&display=swap');
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+
+    /* font  */
+    font-family: 'Josefin Sans', Courier, monospace;
+
+    /* variables  */
+    --light-pink : #F8BFBF;
+    --normal-pink: #EE8B8B;
+    --dark-brown: #423A3A;
+    --dark-pink: #CE9898;
+    --peach: #F96464;
+    --white: #ffffff;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+form{
+    margin-top: 25px;
+}
+.input-border{
+    display: flex;
+    border: solid 1px var(--dark-pink);
+    padding: 5px 15px;
+    border-radius: 30px;
+    position: relative;
+}
+input::placeholder{
+    color: var(--dark-pink);
+}
+button{
+    position: absolute;
+    left: 100%;
+    top: -12%;
+    /* transform: translateY(-50%); */
+    transform: translateX(-100%);
+    background-image: linear-gradient(135deg, var(--light-pink), var(--peach));
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+}
+.container form.error #error-icon{
+    display: block;
+}
+.container .error .error-message{
+    display: block;
+}
+#error-icon{
+    margin-left: 5px;
+    display: none;
+}
+p.error-message{
+    display: none;
+    margin-top: 4px;
+    font-weight: 400;
+    color:var(--peach);
+    font-size: 13px;
+}
+
+
+
+/* Mobile devices (up to 767px) */
+@media only screen and (max-width: 767px) {
+    /* your styles for mobile devices */
+    .container{
+        max-width: 375px;
+        background-image: linear-gradient(-135deg, #fff0f0, white);
+    }
+    header{
+        height: 84px;
+        padding: 0px;
+    }
+    #logo{
+        width: 100px;
+        height: 20.89px;
+        margin: 30px 32px;
+    }
+    .mobile-image{
+        width: 376px;
+        height: 250px;
+        display: block;
+        background-image: url(./images/hero-mobile.jpg);
+        background-size: cover;
+    }
+    .text-container{
+        margin-top: 64px;
+        padding: 0 32px;
+    }
+
+    h1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    h1 span{
+        text-transform: uppercase;
+        letter-spacing: 9px;
+        line-height: 0%;
+    }
+    h1 span:first-child{
+        color: var(--dark-pink);
+        font-weight: 300;
+    }
+    h5{
+        text-align: center;
+        margin-top: 35px;
+        font-weight: 300;
+        color:var(--dark-pink);
+        letter-spacing: 1px;
+    }
+    input{
+        border: none;
+        padding: 5px 15px;
+        border-radius: 30px;
+        width: 70%;
+    }
+}
+  
+  /* Tablets and laptops (768px to 1023px) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* your styles for tablets and laptops */
+    .container{
+        width: 100%;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        display: flex;
+        justify-content: space-between;
+    }
+    .sub-container{
+        max-width: 40%;
+        margin: auto;
+    }
+    header{
+        height: 84px;
+        padding: 0px;
+        
+    }
+    #logo{
+        width: 160px;
+        margin-bottom: 130px;
+        /* height: 20.89px; */
+        /* margin: 30px 32px; */
+    }
+    .mobile-image{
+        display: none;
+    }
+    .desktop-image{
+        display: block;
+        background-image: url(./images/hero-desktop.jpg);
+        width: 40%;
+        height: 100vh;
+    }
+    
+
+    h1{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-weight: 700;
+        font-size: 50px;
+    }
+    h1 span{
+        text-transform: uppercase;
+        letter-spacing: 9px;
+        line-height: 0%;
+    }
+    h1 span:first-child{
+        color: var(--dark-pink);
+        font-weight: 300;
+    }
+    h5{
+        text-align: center;
+        margin-top: 35px;
+        font-weight: 400;
+        color:var(--dark-pink);
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+    input{
+        border: none;
+        padding: 5px 15px;
+        border-radius: 30px;
+        width: 73%;
+    }
+  }
+  
+  /* Desktop computers (1024px and above) */
+  @media only screen and (min-width: 1024px) {
+    /* your styles for desktop computers */
+    .container{
+        width: 100%;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        display: flex;
+        justify-content: space-between;
+    }
+    .sub-container{
+        max-width: 50%;
+        margin: auto;
+    }
+    header{
+        height: 84px;
+        padding: 0px;
+        margin: 30px 32px;
+    }
+    #logo{
+        width: 160px;
+        margin-bottom: 0px;
+        /* height: 20.89px; */
+        /* margin: 30px 32px; */
+    }
+    .mobile-image{
+        display: none;
+    }
+    .desktop-image{
+        display: block;
+        background-image: url(./images/hero-desktop.jpg);
+        width: 40%;
+        height: 100vh;
+        background-size: cover;
+    }
+    
+
+    h1{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-weight: 700;
+        font-size: 80px;
+    }
+    h1 span{
+        text-transform: uppercase;
+        letter-spacing: 9px;
+        line-height: 0%;
+    }
+    h1 span:first-child{
+        color: var(--dark-pink);
+        font-weight: 300;
+    }
+    h5{
+        text-align: center;
+        margin-top: 35px;
+        font-weight: 400;
+        color:var(--dark-pink);
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+    input{
+        border: none;
+        padding: 5px 15px;
+        border-radius: 30px;
+        width: 73%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+/* 
+.container{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub-container{
+    margin-left: 165px;
+}
+.logo-container{
+    height: 84px;
+    padding: 0px;
+}
+#logo{
+    width: 157.59px;
+    height: 32px;
+    margin-left: 32px;
+    margin-top: 64px;
+}
+#mobile-image{
+    display: none;
+}
+#desktop-image{
+    max-width: 42%;
+    height: 100vh;
+    position: absolute;
+    align-items: flex-end;
+}
+.text-container{
+    margin-top: calc(234px - 84px);
+    margin-right: 160px;
+    padding: 0 32px;
+    width: 445px;
+    height: 404px;
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 64px;
+    font-weight: 400;
+}
+h1 span{
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    line-height: 0%;
+}
+h1 span:first-child{
+    color: var(--dark-pink);
+    font-weight: 300;
+}
+h5{
+    text-align: left;
+    margin-top: 50px;
+    font-weight: 300;
+    color:var(--dark-pink);
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.error{
+    margin-top: 4px;
+    font-weight: 400;
+    color:var(--peach);
+    font-size: 13px;
+}
+form{
+    margin-top: 25px;
+}
+.input-border{
+    display: flex;
+    border: solid 1px var(--dark-pink);
+    padding: 5px 15px;
+    border-radius: 30px;
+    position: relative;
+}
+input{
+    border: none;
+}
+input::placeholder{
+    color: var(--dark-pink);
+}
+button{
+    position: absolute;
+    left: 100%;
+    top: -12%;
+    /* transform: translateY(-50%); */
+    transform: translateX(-100%);
+    background-image: linear-gradient(135deg, var(--light-pink), var(--peach));
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+}
+#error-icon{
+    margin-left: 60px;
+}
+
+
+
+/* LARGER DESTOP DESIGN  */
+@media (min-width: 1200px){
+    #desktop-image{
+        max-width: 45%;
+        height: 100vh;
+        position: absolute;
+        align-items: flex-end;
+    }
+    .text-container{
+        margin-top: calc(234px - 84px);
+        margin-right: 160px;
+        padding: 0 32px;
+        width: 445px;
+        height: 404px;
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        /* font-size: 15rem; */
+        font-weight: 400;
+    }
+    h1 span{
+        text-transform: uppercase;
+        letter-spacing: 9px;
+        line-height: 0%;
+    }
+    h1 span:first-child{
+        color: var(--dark-pink);
+        font-weight: 300;
+    }
+    h5{
+        text-align: left;
+        margin-top: 50px;
+        font-weight: 300;
+        color:var(--dark-pink);
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+} */
